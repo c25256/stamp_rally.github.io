@@ -14,8 +14,17 @@
     <button id="registerBtn">アカウントをお持ちでない方</button>
   </a>
 
-  <!-- ログインボタン（ここでは詳細なロジックが必要ですが仮で設定） -->
-  <button id="loginBtn">ログイン</button>
+  <!-- ログインフォーム -->
+  <h2>ログイン</h2>
+  <form id="loginForm">
+    <label for="nickname">ニックネーム:</label>
+    <input type="text" id="nickname" placeholder="ニックネーム" required>
+    
+    <label for="number">番号:</label>
+    <input type="text" id="number" placeholder="5桁の番号" required maxlength="5">
+
+    <button type="submit">ログイン</button>
+  </form>
 
   <script src="script.js"></script>
 </body>
