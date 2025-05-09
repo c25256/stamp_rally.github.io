@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>スタンプカード</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- QRコードスキャンのためのライブラリ -->
+  <script src="https://unpkg.com/jsqr/dist/jsQR.js"></script>
+</head>
+<body>
+  <h1>スタンプカード</h1>
+
+  <div id="stampCard">
+    <h2>あなたのスタンプカード</h2>
+    <div id="stamps">
+      <!-- ここにスタンプが表示される -->
+      <div class="stamp" id="stamp1">スタンプ1</div>
+      <div class="stamp" id="stamp2">スタンプ2</div>
+      <div class="stamp" id="stamp3">スタンプ3</div>
+      <div class="stamp" id="stamp4">スタンプ4</div>
+      <div class="stamp" id="stamp5">スタンプ5</div>
+      <div class="stamp" id="stamp6">スタンプ6</div>
+    </div>
+    <button id="scanQRBtn">QRコードをスキャン</button>
+  </div>
+
+  <div id="scanner" style="display:none;">
+    <h2>QRコードをスキャンしてください</h2>
+    <video id="preview" width="100%" height="auto"></video>
+    <button id="stopScanBtn">スキャン停止</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
